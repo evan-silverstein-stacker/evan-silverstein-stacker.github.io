@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import styles from './styles.css';
 
 
 class MyCard extends React.Component{
@@ -13,7 +14,7 @@ class MyCard extends React.Component{
         />
         <CardMedia>
         <a href={this.props.link} target="_blank">
-          <img src={this.props.img} width="200" height="200" />
+          <img className={styles.poster} src={this.props.img}/>
         </a>
         </CardMedia>
         <CardTitle title={this.props.title} subtitle={this.props.subtitle} />
