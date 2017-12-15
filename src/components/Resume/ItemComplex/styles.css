@@ -1,0 +1,17 @@
+.container{
+    border-bottom: 1px solid black;
+    
+}
+
+.title{
+    font-weight: bold;
+    float: left;
+    
+}
+
+.location{
+    text-align: right;
+ 
+    
+}
+

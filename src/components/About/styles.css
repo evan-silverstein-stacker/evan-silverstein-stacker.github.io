@@ -1,0 +1,10 @@
+
+.frameWrapper{
+    margin-right: 10px;
+}
+
+.summary{
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 400px;
+}

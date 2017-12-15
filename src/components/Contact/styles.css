@@ -1,0 +1,13 @@
+/* .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+} */
+
+.item{
+    max-width: 400px;
+    
+}
+
+

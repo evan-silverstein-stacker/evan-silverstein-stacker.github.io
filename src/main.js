@@ -1,11 +1,16 @@
-console.log('hello world');
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { BrowserRouter} from 'react-router-dom'
+import App from 'components/App';
+import styles from '../www/styles.css';
  
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById('mount')
-  );
+      <MuiThemeProvider>
+      <BrowserRouter>
+        <App/>
+      </BrowserRouter>
+      </MuiThemeProvider>
+        , document.getElementById('root'));
 });

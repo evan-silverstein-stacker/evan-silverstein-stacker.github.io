@@ -1,0 +1,13 @@
+.container{
+    margin-top: 10px;
+}
+
+.col1{
+    width: 120px;
+    float: left;
+}
+
+.col2 {
+
+    overflow:auto;
+}

@@ -1,0 +1,13 @@
+/* .container{
+    max-width: 800px;
+    margin: auto;
+    padding:20px;
+} */
+
+.resume{
+    max-width: 800px;
+    /* overflow-y: scroll;
+    height: 450px;
+    border: 1px solid black;
+    padding: 10px; */
+}
