@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/www";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 142);
@@ -7804,7 +7804,7 @@ var _App = __webpack_require__(261);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _styles = __webpack_require__(364);
+var _styles = __webpack_require__(366);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -34321,15 +34321,15 @@ var _Portfolio = __webpack_require__(328);
 
 var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
-var _Contact = __webpack_require__(351);
+var _Contact = __webpack_require__(353);
 
 var _Contact2 = _interopRequireDefault(_Contact);
 
-var _NavBar = __webpack_require__(357);
+var _NavBar = __webpack_require__(359);
 
 var _NavBar2 = _interopRequireDefault(_NavBar);
 
-var _styles = __webpack_require__(362);
+var _styles = __webpack_require__(364);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -42799,7 +42799,7 @@ exports = module.exports = __webpack_require__(12)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n/* .container{\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    \r\n} */\r\n\r\n.styles__cardWrapper___1xsC-{\r\n    width: 250px;\r\n    margin: 10px;\r\n}", ""]);
+exports.push([module.i, "\r\n/* .container{\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    \r\n} */\r\n\r\n.styles__cardWrapper___1xsC-{\r\n    width: 250px;\r\n    height: 300px;\r\n    margin: 10px;\r\n}", ""]);
 
 // exports
 exports.locals = {
@@ -42851,6 +42851,10 @@ var _headshot = __webpack_require__(54);
 
 var _headshot2 = _interopRequireDefault(_headshot);
 
+var _styles = __webpack_require__(351);
+
+var _styles2 = _interopRequireDefault(_styles);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -42858,9 +42862,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// import styles from './styles.css';
-
 
 var Project = function (_React$Component) {
     _inherits(Project, _React$Component);
@@ -42877,7 +42878,7 @@ var Project = function (_React$Component) {
             var project = this.props.project;
             return _react2.default.createElement(
                 'div',
-                null,
+                { className: _styles2.default.card },
                 _react2.default.createElement(_MyCard2.default, {
                     title: project.title,
                     img: project.image,
@@ -42895,6 +42896,53 @@ exports.default = Project;
 
 /***/ }),
 /* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(352);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(13)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js??ref--2!./styles.css", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js??ref--2!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".styles__card___3FqiE{\r\n    /* height: 400px;\r\n    width: 400px; */\r\n}", ""]);
+
+// exports
+exports.locals = {
+	"card": "styles__card___3FqiE"
+};
+
+/***/ }),
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42926,11 +42974,11 @@ var _PageContent = __webpack_require__(45);
 
 var _PageContent2 = _interopRequireDefault(_PageContent);
 
-var _Item = __webpack_require__(352);
+var _Item = __webpack_require__(354);
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _styles = __webpack_require__(355);
+var _styles = __webpack_require__(357);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -42990,7 +43038,7 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 352 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43006,7 +43054,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _styles = __webpack_require__(353);
+var _styles = __webpack_require__(355);
 
 var _styles2 = _interopRequireDefault(_styles);
 
@@ -43053,55 +43101,6 @@ var Item = function (_React$Component) {
 exports.default = Item;
 
 /***/ }),
-/* 353 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(354);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(13)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--2!./styles.css", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--2!./styles.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 354 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(12)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".styles__container___2jAdu{\r\n    margin-top: 10px;\r\n}\r\n\r\n.styles__col1___2uCkB{\r\n    width: 120px;\r\n    float: left;\r\n}\r\n\r\n.styles__col2___ywz-L {\r\n\r\n    overflow:auto;\r\n}\r\n", ""]);
-
-// exports
-exports.locals = {
-	"container": "styles__container___2jAdu",
-	"col1": "styles__col1___2uCkB",
-	"col2": "styles__col2___ywz-L"
-};
-
-/***/ }),
 /* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -43141,6 +43140,55 @@ exports = module.exports = __webpack_require__(12)(undefined);
 
 
 // module
+exports.push([module.i, ".styles__container___2jAdu{\r\n    margin-top: 10px;\r\n}\r\n\r\n.styles__col1___2uCkB{\r\n    width: 120px;\r\n    float: left;\r\n}\r\n\r\n.styles__col2___ywz-L {\r\n\r\n    overflow:auto;\r\n}\r\n", ""]);
+
+// exports
+exports.locals = {
+	"container": "styles__container___2jAdu",
+	"col1": "styles__col1___2uCkB",
+	"col2": "styles__col2___ywz-L"
+};
+
+/***/ }),
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(358);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(13)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js??ref--2!./styles.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js??ref--2!./styles.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 358 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(12)(undefined);
+// imports
+
+
+// module
 exports.push([module.i, "/* .container{\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-wrap: wrap;\r\n    \r\n} */\r\n\r\n.styles__item___1VHVc{\r\n    max-width: 400px;\r\n    \r\n}\r\n\r\n\r\n", ""]);
 
 // exports
@@ -43149,7 +43197,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 357 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43165,7 +43213,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _AppBar = __webpack_require__(358);
+var _AppBar = __webpack_require__(360);
 
 var _AppBar2 = _interopRequireDefault(_AppBar);
 
@@ -43173,7 +43221,7 @@ var _IconButton = __webpack_require__(93);
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _close = __webpack_require__(361);
+var _close = __webpack_require__(363);
 
 var _close2 = _interopRequireDefault(_close);
 
@@ -43255,7 +43303,7 @@ var NavBar = function (_React$Component) {
 exports.default = NavBar;
 
 /***/ }),
-/* 358 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43266,7 +43314,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = undefined;
 
-var _AppBar = __webpack_require__(359);
+var _AppBar = __webpack_require__(361);
 
 var _AppBar2 = _interopRequireDefault(_AppBar);
 
@@ -43275,7 +43323,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _AppBar2.default;
 
 /***/ }),
-/* 359 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43335,7 +43383,7 @@ var _IconButton = __webpack_require__(93);
 
 var _IconButton2 = _interopRequireDefault(_IconButton);
 
-var _menu = __webpack_require__(360);
+var _menu = __webpack_require__(362);
 
 var _menu2 = _interopRequireDefault(_menu);
 
@@ -43666,7 +43714,7 @@ exports.default = AppBar;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 360 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43704,7 +43752,7 @@ NavigationMenu.muiName = 'SvgIcon';
 exports.default = NavigationMenu;
 
 /***/ }),
-/* 361 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43742,13 +43790,13 @@ NavigationClose.muiName = 'SvgIcon';
 exports.default = NavigationClose;
 
 /***/ }),
-/* 362 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(363);
+var content = __webpack_require__(365);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -43773,7 +43821,7 @@ if(false) {
 }
 
 /***/ }),
-/* 363 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(12)(undefined);
@@ -43791,13 +43839,13 @@ exports.locals = {
 };
 
 /***/ }),
-/* 364 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(365);
+var content = __webpack_require__(367);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -43822,7 +43870,7 @@ if(false) {
 }
 
 /***/ }),
-/* 365 */
+/* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(12)(undefined);
