@@ -1,5 +1,5 @@
 const path = require('path');
-const ASSET_PATH = process.env.ASSET_PATH || '/www';
+const ASSET_PATH = process.env.ASSET_PATH || '/www/';
 
 module.exports = {
   context: path.join(__dirname, 'src'),
