@@ -17,6 +17,7 @@ class Project extends React.Component{
             <div className={styles.card}>
                 <Card 
                     title={project.title}
+                    subtitle={project.languages}
                     img={project.image}                   
                     text={project.description}
                     link={project.link}

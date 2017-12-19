@@ -3,23 +3,50 @@ import Project from 'models/Project'
 import financePic from 'public/financeAppPoster.jpg'
 import podiatryPic from 'public/podiatryAppPoster.png'
 import headshot from 'public/headshot.jpg'
+import React from 'react'
 
 
 
 const financeApp = new Project(
     "Financial App",
-    "A web app coded in C# (ASP.NET MVC)",
+    "ASP.NET MVC",
+    "This web app tracks expenses",
     "https://github.com/Titaniumstein/FinanceManagerApplication",
-    financePic
-    
-    
+    "fa fa-dollar" 
 )
 
 const podiatryApp = new Project(
     "Podiatry App",
-    "A desktop app coded in C# (WPF/WinForms)",
+    "WPF/WinForms",
+    "This desktop app manages a podiatric clinic",
     "https://github.com/Titaniumstein/PodiatryApplication",
-    podiatryPic
+    "fa fa-medkit"
 )
 
-export default [financeApp, podiatryApp];
+const pickAppHockey = new Project(
+    "PickApp Hockey",
+    "React/Redux",
+    "This web app predicts the business of a given outdoor public rink",
+    "https://github.com/Titaniumstein/PickAppHockey_Client",
+    "fa-snowflake-o"
+)
+
+const stacker = new Project(
+    "Stacker",
+    "React",
+    'This web app is based on the arcade game "stacker"',
+    "https://github.com/Titaniumstein/PickAppHockey_Client",
+    "fa-gamepad"
+)
+
+const hangman = new Project(
+    "Hangman",
+    "React",
+    'This web app is based on the game "hangman"',
+    "https://github.com/Titaniumstein/PickAppHockey_Client",
+    "fa-gamepad"
+)
+
+
+
+export default [financeApp, podiatryApp, pickAppHockey, stacker, hangman];

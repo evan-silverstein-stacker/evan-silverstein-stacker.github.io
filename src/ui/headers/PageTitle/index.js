@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './styles.css';
 
 class PageTitle extends React.Component{
     render(){
         return(
-            <h1> {this.props.text} </h1>
+            <div className={styles.pageTitle}> {this.props.text} </div>
         )
     }
 }

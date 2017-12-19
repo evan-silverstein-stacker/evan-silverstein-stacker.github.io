@@ -6,21 +6,44 @@ import headshot from 'public/headshot.jpg';
 import Frame from 'ui/Frame';
 import PageContent from 'ui/PageContent';
 import styles from './styles.css';
+import CardMain from './CardMain';
+import CardSub from './CardSub';
+
+
 
 
 class About extends React.Component{
     render(){
+        var about = PROFILE.aboutMe;
+        var cardMain = <div className={styles.cardMain}>
+                            <CardMain
+                            img={about.image}
+                            cardTitle={about.title}
+                            cardContent={about.content}
+                            />
+                        </div>
+
+        var cardSubComps = PROFILE.aboutMeItems.map((about)=>{
+            return(
+                    <div className={styles.cardSub}>
+                        <CardSub
+                        icon={about.image}
+                        cardTitle={about.title}
+                        cardContent={about.content}
+                        />
+                    </div>
+            )
+        })
         return(
             <div>
                 <PageTitle text="About Me"/>
                 <PageContent>
-                    <div className={styles.frameWrapper}>
-                        <Frame caption={PROFILE.name}>
-                            <img src={headshot} height="200" width="200"/>
-                        </Frame>
-                    </div>
-                    <div className={styles.summary}>
-                        {PROFILE.about}
+                    <div className={styles.container}>
+                        {cardMain}
+                        {/* </div> */}
+                        <div className={styles.cardItemsWrapper}>
+                            {cardSubComps}
+                        </div>
                     </div>
                 </PageContent>
             </div>

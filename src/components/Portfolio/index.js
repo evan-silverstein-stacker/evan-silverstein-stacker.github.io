@@ -26,9 +26,9 @@ class Portfolio extends React.Component{
             <div>
                 <PageTitle text="Portfolio"/>
                 <PageContent>
-                    {/* <div className={styles.container}> */}
+                    <div className={styles.container}>
                         {projectComponents}
-                    {/* </div> */}
+                    </div>
                 </PageContent>
             </div>
         )

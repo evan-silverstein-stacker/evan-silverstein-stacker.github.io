@@ -2,12 +2,13 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
-import FlatButton from 'material-ui/FlatButton';
-import { BrowserRouter, Route, Link } from 'react-router-dom'
-
+// import FlatButton from 'material-ui/FlatButton';
+import NavBarButton from 'ui/Buttons/NavBarButton';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import PROFILE from 'constants/PROFILE';
+//import styles from 'styles.css';
 
 class NavBar extends React.Component{
-
 
     handleTitleClick(){
         
@@ -16,26 +17,26 @@ class NavBar extends React.Component{
     render(){
         return(
             <AppBar
-            title={""}
+            title={PROFILE.name}
             onTitleClick={this.props.onTitleClick}
             //iconElementLeft={<IconButton><NavigationClose /></IconButton>}
             iconElementLeft={<div/>}
             iconElementRight={
-                <div>
+                <div  style={{marginTop:'8px'}}>
 
                     <Link to={'/'}>
-                        <FlatButton label="Portfolio"/>
+                        <NavBarButton label="Portfolio"/>
                     </Link>
 
                     <Link to={'/about'}>
-                        <FlatButton label="About"/>
+                        <NavBarButton label="About"/>
                     </Link>
                     <Link to={'/resume'}>
-                        <FlatButton label="Resume"/>
+                        <NavBarButton label="Resume"/>
                      </Link>
 
                      <Link to={'/contact'}>
-                        <FlatButton label="Contact"/>
+                        <NavBarButton label="Contact"/>
                      </Link>
               
                     

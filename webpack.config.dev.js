@@ -1,5 +1,4 @@
 const path = require('path');
-const ASSET_PATH = process.env.ASSET_PATH || '/www/';
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -11,7 +10,6 @@ module.exports = {
   output: {
 
     path: path.join(__dirname, 'www'),
-    // publicPath: ASSET_PATH,
     filename: 'bundle.js',
   },
 

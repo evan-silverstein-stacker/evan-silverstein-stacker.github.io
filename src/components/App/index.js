@@ -13,8 +13,9 @@ class App extends React.Component{
         return(
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <div className={styles.title}> Evan Silverstein </div>
-                    <NavBar/>
+                    <div className={styles.navbar}>
+                        <NavBar/>
+                    </div>
                     <div className={styles.page}>
                         <Switch>
                             <Route exact path='/' component={Portfolio}/>

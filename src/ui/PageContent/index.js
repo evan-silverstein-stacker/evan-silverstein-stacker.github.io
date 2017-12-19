@@ -4,7 +4,7 @@ import styles from './styles.css'
 class PageContent extends React.Component{
     render(){
         return(
-            <div className={styles.container}>
+            <div className={styles.pageContent}>
                 {this.props.children}
             </div>
         )

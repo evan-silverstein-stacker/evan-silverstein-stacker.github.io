@@ -1,14 +1,10 @@
 body{
     background: lightgray;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 20px;
     
 }
 
-/* .container{
-    background: lightgray;
-    min-height: 100%;
-    width: 100%;
-    padding: 5px 0px;
-} */
 
 .content{
     background-color: white;
@@ -18,13 +14,12 @@ body{
 }
 
 .page{
-    padding: 20px;
+    padding: 40px;
+    overflow: hidden;
+    /* min-width: 250px;  */
 }
 
 
-.title{
-    text-align: center;
-    font-weight: bold;
-    font-size: 3.0rem;
-    padding: 5px;
-}
+/* .navbar{
+    position: fixed;
+} */

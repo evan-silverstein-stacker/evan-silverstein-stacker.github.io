@@ -1,7 +1,7 @@
-.container{
-    /* max-width: 800px; */
+.pageContent{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;    
-    /* margin: auto; */
+    flex-wrap: wrap;
+    margin-top: 40px;
+
 }
