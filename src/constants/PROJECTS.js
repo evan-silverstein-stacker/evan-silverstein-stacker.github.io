@@ -28,7 +28,7 @@ const pickAppHockey = new Project(
     "React/Redux",
     "This web app predicts the business of a given outdoor public rink",
     "https://github.com/Titaniumstein/PickAppHockey_Client",
-    "fa-snowflake-o"
+    "fa fa-snowflake-o"
 )
 
 const stacker = new Project(
@@ -36,7 +36,7 @@ const stacker = new Project(
     "React",
     'This web app is based on the arcade game "stacker"',
     "https://github.com/Titaniumstein/PickAppHockey_Client",
-    "fa-gamepad"
+    "fa fa-gamepad"
 )
 
 const hangman = new Project(
@@ -44,7 +44,7 @@ const hangman = new Project(
     "React",
     'This web app is based on the game "hangman"',
     "https://github.com/Titaniumstein/PickAppHockey_Client",
-    "fa-gamepad"
+    "fa fa-gamepad"
 )
 
 
