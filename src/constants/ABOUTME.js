@@ -33,7 +33,7 @@ const piano = {
     title: "Piano",
     headerTitle: "Test 2", // not needed
     image: "fa fa-music",
-    content: "I love to play R&B piano in my spare time. However, my repetoire of songs mainly includes Disney classics."
+    content: "I love to play R&B piano in my spare time. However, my repertoire of songs mainly includes Disney classics."
 }
 
 // const podiatryApp = new Project(
