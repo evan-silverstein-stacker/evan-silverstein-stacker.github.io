@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { BrowserRouter} from 'react-router-dom'
 import App from 'components/App';
-import styles from '../www/styles.css';
  
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
