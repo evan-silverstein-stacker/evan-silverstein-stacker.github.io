@@ -6,7 +6,8 @@
     "plugins": [
         ["module-resolver", {
         "root": ["./src"]
-        }]
+        }],
+        ["transform-class-properties"]
     ]
       
   }
