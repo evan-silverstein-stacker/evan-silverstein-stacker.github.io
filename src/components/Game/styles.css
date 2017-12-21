@@ -1,0 +1,30 @@
+.dashWrapper{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.screenWrapper{
+    border: 5px solid goldenrod;
+}
+
+.screen{
+    background-color: black;
+    margin: auto;
+}
+
+
+.btn{
+
+}
+
+.gameResultText{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.bar{
+    background-color: darkslategray
+}

@@ -1,0 +1,17 @@
+body{
+    margin: 0px !important;
+    background-color: powderblue;
+    padding: 20px;
+}
+
+.centerText{
+    text-align: center;
+}
+
+.gameWrapper{
+    margin: 40px;
+}
+
+
+
+
